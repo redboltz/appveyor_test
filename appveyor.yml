@@ -4,6 +4,7 @@ before_build:
 - dir C:\
 - dir C:\Libraries
 - dir C:\Libraries\boost
+- dir C:\Libraries\boost\stage\lib
 
 build_script:
 - dir
