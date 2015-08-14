@@ -10,6 +10,7 @@ environment:
   matrix:
     - var1: A
     - var1: B
+  matrix:
     - var2: C
     - var2: D
 
