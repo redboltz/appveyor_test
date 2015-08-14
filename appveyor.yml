@@ -8,8 +8,8 @@ before_build:
 
 environment:
   matrix:
-    var1: A
-    var1: B
+    - var1: A
+    - var1: B
 
 build_script:
 - echo var1
