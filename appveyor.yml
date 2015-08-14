@@ -6,5 +6,10 @@ before_build:
 - dir C:\Libraries\boost
 - dir C:\Libraries\boost\stage\lib
 
+environment:
+var1: A
+var1: B
+
 build_script:
-- dir
+- echo var1
+- echo %var1%
