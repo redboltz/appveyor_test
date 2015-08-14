@@ -10,7 +10,9 @@ environment:
   matrix:
     - var1: A
     - var1: B
+    - var2: C
+    - var2: D
 
 build_script:
-- echo var1
 - echo %var1%
+- echo %var2%
