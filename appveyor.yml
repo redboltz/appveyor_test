@@ -7,11 +7,10 @@ before_build:
 - dir C:\Libraries\boost\stage\lib
 
 environment:
-var1: A
-var2: B
+  matrix:
+    var1: A
+    var1: B
 
 build_script:
 - echo var1
 - echo %var1%
-- echo var2
-- echo %var2%
