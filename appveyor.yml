@@ -14,5 +14,6 @@ environment:
       var2: D
 
 build_script:
+- cl template_specialize.cpp
 - echo %var1%
 - echo %var2%
