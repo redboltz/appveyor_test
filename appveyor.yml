@@ -3,6 +3,7 @@ before_build:
 - dir
 - dir C:\
 - dir C:\Libraries
+- dir C:\Libraries\boost1_58_0
 - dir C:\Libraries\boost
 - dir C:\Libraries\boost\stage\lib
 
@@ -14,6 +15,5 @@ environment:
       var2: D
 
 build_script:
-- "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe" template_specialize.cpp
 - echo %var1%
 - echo %var2%
