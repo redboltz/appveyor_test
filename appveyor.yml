@@ -1,4 +1,6 @@
 version: 1.1.0.{build}
+os: Previous Visual Studio 2015
+
 before_build:
 - dir
 - dir C:\
