@@ -6,11 +6,10 @@ before_build:
 - dir C:\Libraries\boost1_58_0
 - dir C:\Libraries\boost
 - dir C:\Libraries\boost\stage\lib
-- dir "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin"
-- dir "C:\Program Files (x86)"
-- dir "C:\Program Files (x86)\Microsoft Visual Studio 14.0"
-- dir "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC"
-- dir "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin"
+- dir 'C:\Program Files (x86)'
+- dir 'C:\Program Files (x86)\Microsoft Visual Studio 14.0'
+- dir 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC'
+- dir 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin'
 
 
 build_script:
