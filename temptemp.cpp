@@ -1,7 +1,7 @@
 #include <mutex>
 #include <iostream>
 
-template <typename Mutex = std::mutex, template<typename> class LockGuard = std::lock_guard>
+template <typename Mutex = std::mutex, template<typename...> class LockGuard = std::lock_guard>
 struct foo{
     Mutex mtx;
     void bar() {
