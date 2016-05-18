@@ -7,6 +7,7 @@ before_build:
 
 
 build_script:
+- call "c:\Program Files (x86)\Microsoft Visual Studio\14.0\VC\vcvarsall.bat"
 - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe" temptemp.cpp
 - echo %var1%
 - echo %var2%
