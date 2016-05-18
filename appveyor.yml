@@ -3,6 +3,7 @@ before_build:
 - dir
 - dir C:\
 - dir C:\Libraries
+- dir C:\Libraries\boost1_58_0
 - dir C:\Libraries\boost
 - dir C:\Libraries\boost\stage\lib
 
