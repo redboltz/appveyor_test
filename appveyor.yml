@@ -7,6 +7,7 @@ before_build:
 - dir C:\Libraries
 - dir "C:\Program Files (x86)"
 - dir C:\OpenSSL-Win32
+- dir C:\OpenSSL-Win32\lib
 
 build_script:
 - call "c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
