@@ -10,8 +10,9 @@ before_build:
 - dir C:\OpenSSL-Win32\lib
 
 build_script:
+- md build
+- cd build
+- cmake %notls% -DBoost_NO_SYSTEM_PATHS=ON -DBOOST_ROOT="C:\Libraries\boost_1_59_0" -DBOOST_INCLUDEDIR="C:\Libraries\boost_1_59_0\include" -DBOOST_LIBRARYDIR="C:\Libraries\boost_1_59_0\lib32-msvc-14.0" -DCMAKE_CXX_FLAGS="/IC:\Libraries\boost_1_59_0\include /EHsc" -DBoost_LIBRARY_DIRS=C:\Libraries\boost_1_59_0\stage\lib -DCMAKE_EXE_LINKER_FLAGS=/LIBPATH:C:\Libraries\boost_1_59_0\lib32-msvc-14.0 -DOPENSSL_ROOT_DIR="C:\OpenSSL-Win32" -DOPENSSL_INCLUDE_DIR="C:\OpenSSL-Win32\include" -DOPENSSL_LIBRARIES="C:\OpenSSL-Win32\lib" -DMQTT_OPENSSL_INCLUDE_DIR="C:\OpenSSL-Win32\include" ..
 - call "c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
 - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"
 - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe" temptemp.cpp
-- echo %var1%
-- echo %var2%
