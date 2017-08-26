@@ -8,6 +8,7 @@ before_build:
 - dir "C:\Program Files (x86)"
 - dir C:\OpenSSL-Win32
 - dir C:\OpenSSL-Win32\lib
+- dir C:\Libraries\boost_1_64_0
 
 build_script:
 - md build
