@@ -9,6 +9,7 @@ before_build:
 - dir C:\OpenSSL-Win32
 - dir C:\OpenSSL-Win32\lib
 - dir C:\Libraries\boost_1_64_0
+- dir C:\Libraries\boost_1_64_0\lib32-msvc-14.1
 
 build_script:
 - md build
